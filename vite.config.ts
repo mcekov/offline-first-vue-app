@@ -15,7 +15,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["@sqlite.org/sqlite-wasm"],
   },
-  plugins: [vue(), tailwindcss(), vueDevTools()],
+  plugins: [vue(), vueDevTools(), tailwindcss()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
